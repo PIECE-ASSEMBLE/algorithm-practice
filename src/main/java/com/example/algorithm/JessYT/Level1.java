@@ -1,5 +1,6 @@
 package com.example.algorithm.JessYT;
 
+import java.util.Arrays;
 import java.util.Stack;
 
 public class Level1 {
@@ -22,4 +23,16 @@ public class Level1 {
         }
         return answer;
     }
+
+    public String 완주하지못한선수(String[] participant, String[] completion) {
+        Arrays.sort(participant);
+        Arrays.sort(completion);
+        int i = 0;
+        for (i = 0; i < participant.length; i++) {
+            if(completion.length == i || !participant[i].equals(completion[i])) 
+                break;
+        }
+        
+        return participant[i];
+    } 
 }

@@ -24,4 +24,14 @@ public class Level1Test {
 
         assertEquals(answer, 4);
     }
+
+    @Test
+    @DisplayName("완주하지 못한 선수 Test...")
+    public void 완주하지못한선수_Test() {
+        String[] participant = {"leo", "kiki", "eden"};
+        String[] completion = {"eden", "kiki"};
+        String answer = practice.완주하지못한선수(participant, completion);
+        assertEquals(answer, "leo");
+    }
+    
 }
