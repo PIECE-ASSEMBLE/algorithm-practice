@@ -6,7 +6,7 @@ git clone https://github.com/PIECE-ASSEMBLE/algorithm-practice.git
 
 # MEMBER
 - 임용태 : JessYT
-- 김정현 : codemakim
+- 김정현 : kimJeongHyeon
 - 김연식
 - 조하나
 
