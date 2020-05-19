@@ -5,7 +5,7 @@ git clone https://github.com/PIECE-ASSEMBLE/algorithm-practice.git
 3 solve on 1 week
 
 # MEMBER
-- 임용태
+- 임용태 : JessYT
 - 김정현
 - 김연식
 - 조하나
