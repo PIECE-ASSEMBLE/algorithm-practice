@@ -8,7 +8,7 @@ git clone https://github.com/PIECE-ASSEMBLE/algorithm-practice.git
 - 임용태 : JessYT
 - 김정현 : kimJeongHyeon
 - 김연식
-- 조하나
+- 조하나 : one1214
 
 # HOW
 1. 자신의 아이뒤 혹은 이름으로 package 생성
