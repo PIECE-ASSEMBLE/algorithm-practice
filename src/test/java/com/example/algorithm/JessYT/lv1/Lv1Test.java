@@ -1,4 +1,4 @@
-package com.example.algorithm.JessYT;
+package com.example.algorithm.JessYT.lv1;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -6,13 +6,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class Level1Test {
+public class Lv1Test {
     
-    private Level1 practice;
+    private Lv1 practice;
 
     @BeforeEach
     void init() {
-        practice = new Level1();
+        practice = new Lv1();
     }
 
     @Test

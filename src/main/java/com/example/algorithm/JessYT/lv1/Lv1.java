@@ -1,9 +1,9 @@
-package com.example.algorithm.JessYT;
+package com.example.algorithm.JessYT.lv1;
 
 import java.util.Arrays;
 import java.util.Stack;
 
-public class Level1 {
+public class Lv1 {
     public int 크레인인형뽑기게임(int[][] board, int[] moves) {
         int answer = 0;
         Stack<Integer> s = new Stack<Integer>();
