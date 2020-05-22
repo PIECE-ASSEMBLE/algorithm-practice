@@ -30,7 +30,7 @@ import java.util.HashMap;
  * 예를 들어, k = 5, room_number = [5, 5] 와 같은 경우는 방을 배정받지 못하는 고객이 발생하므로 이런 경우는 입력으로 주어지지 않습니다.
  * 
  * <p>필기</p>
- * 진짜 간단하게 짜는데 성공했다고 좋아했으나, 효율성 테스트를 통과하지 못하고 있습니다...
+ * 주말 동안 자세한 풀이 달아놓겠습니다!
  * 
  * @author kaeao
  *
@@ -43,8 +43,8 @@ public class SelectHotelRoom {
 			map.put(call, call);
 			return call;
 		} else {
-			call = judgeMuchine(call + 1);
-			return call;
+			map.put(call, judgeMuchine(map.get(call)+1));
+			return map.get(call);
 		}
 	}
 
