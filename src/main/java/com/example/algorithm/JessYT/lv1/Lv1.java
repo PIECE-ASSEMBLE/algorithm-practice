@@ -1,6 +1,9 @@
 package com.example.algorithm.JessYT.lv1;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Stack;
 
 public class Lv1 {
@@ -35,4 +38,37 @@ public class Lv1 {
         
         return participant[i];
     } 
+
+    public String 문자열내림차순으로배치하기1(String s) {
+        List<String> copy = new ArrayList<String>(Arrays.asList(s.split("")));
+        StringBuilder stringbuilder = new StringBuilder();
+
+        while(copy.size() > 1) {
+            String min = copy.get(0);
+            for (int i = 1; i < copy.size(); i++) {
+                if(min.compareTo(copy.get(i)) < 0) {
+                    min = copy.get(i);
+                }
+            }
+            copy.remove(min);
+            stringbuilder.append(min);
+        };
+
+        stringbuilder.append(copy.get(0));
+
+        return stringbuilder.toString();
+    }
+
+    public String 문자열내림차순으로배치하기2(String s) {
+        String[] stringArray = s.split("");
+        Arrays.sort(stringArray, Collections.reverseOrder());
+        List<String> strings = new ArrayList<String>(Arrays.asList(stringArray));
+
+        StringBuilder stringbuilder = new StringBuilder();
+        for (String string : strings) {
+            stringbuilder.append(string);
+        }
+
+        return stringbuilder.toString();
+    };
 }

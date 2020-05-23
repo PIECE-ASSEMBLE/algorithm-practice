@@ -2,7 +2,7 @@ package com.example.algorithm.JessYT.lv3;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.hamcrest.core.Is;
+import java.util.Arrays;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.is;
@@ -36,4 +36,15 @@ public class Lv3Test {
         assertThat(answer, is(new int[]{0,0,1,0,0,1,1}));
 
     }
+
+    @Test
+    @DisplayName("입국심사 test..")
+    public void 입국심사_Test() {
+        int n = 6;
+        int[] times = {7,10};
+        long answer = practice.입국심사(n, times);
+
+        assertEquals(answer, 28);
+    }
+
 }

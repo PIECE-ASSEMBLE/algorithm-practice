@@ -1,6 +1,8 @@
 package com.example.algorithm.JessYT.lv1;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.CoreMatchers.is;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -34,4 +36,23 @@ public class Lv1Test {
         assertEquals(answer, "leo");
     }
     
+    @Test
+    @DisplayName("문자열내림차순으로배치하기 Sort 안쓰고 풀어보기")
+    public void 문자열내림차순으로배치하기1_Test() {
+        String s = "Zbcdefg";
+        	
+        String answer = practice.문자열내림차순으로배치하기1(s);
+        
+        assertEquals(answer, "gfedcbZ");
+    }
+
+    @Test
+    @DisplayName("Arrays 객체의 sort의 소중함..")
+    public void 문자열내림차순으로배치하기2_Test() {
+        String s = "Zbcdefg";
+        	
+        String answer = practice.문자열내림차순으로배치하기2(s);
+        
+        assertEquals(answer, "gfedcbZ");
+    }
 }

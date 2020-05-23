@@ -1,6 +1,15 @@
 package com.example.algorithm.JessYT.lv3;
 
+import java.io.File;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 import java.util.Queue;
 
 public class Lv3 {
@@ -27,4 +36,9 @@ public class Lv3 {
         }
         return new_queue.stream().mapToInt(Integer::intValue).toArray();
     }
+
+    public long 입국심사(int n, int[] times) {
+        return 0L;
+    }
+
 }
