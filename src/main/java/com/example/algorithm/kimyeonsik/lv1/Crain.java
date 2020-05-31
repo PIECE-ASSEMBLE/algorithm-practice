@@ -1,6 +1,5 @@
-package com.example.algorithm.kimyeonsik.lv3;
+package com.example.algorithm.kimyeonsik.lv1;
 
-import java.util.Arrays;
 import java.util.Stack;
 
 class Paper{
