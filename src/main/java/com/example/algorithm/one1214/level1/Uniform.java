@@ -50,31 +50,28 @@ public class Uniform {
 	}
 	
 	public static int solution(int n, int[] lost, int[] reserve) {
-        int answer = 0;
-        int surplus = 0;	// 도난 당한 학생 중 여벌 옷을 가지고 있던 학생 수
-        int help = 0;		// 다른 학생에게 체육복을 빌린 학생 수
-        
+int answer = n - lost.length;
         
         for(int i = 0; i < lost.length; i++) {
         	for(int j = 0; j < reserve.length; j++) {
         		if(lost[i] == reserve[j]) {
         			reserve[j] = -1;
         			lost[i] = -1;
-        			surplus++;
+        			answer++;
         			break;
         		} else if(lost[i] - reserve[j] == 1) {
         			reserve[j] = -1;
-        			help++;
+        			lost[i] = -1;
+        			answer++;
         			break;
         		} else if(lost[i] - reserve[j] == -1) {
         			reserve[j] = -1;
-        			help++;
+        			lost[i] = -1;
+        			answer++;
         			break;
-        		}
+        		} 
         	}
         }
-        answer = n - lost.length - surplus + help;
-        
         return answer;
     }
 
